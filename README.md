@@ -23,7 +23,7 @@ Summary: 1 package finished [5.58s]
 
 Not: Bende paket eksikliği ile ilgili bir error çıktı. Eğer sizde hata olmazsa hata çözümünü atlayınız!!!
 
-Hata Çözümü:“pip install pytest-rerunfailures” komutu ile gerekli bir paketi kurunuz. Ardından tekrar colcon build komutunu yazınız.
+Hata Çözümü: “pip install pytest-rerunfailures” komutu ile gerekli bir paketi kurunuz. Ardından tekrar colcon build komutunu yazınız.
 
 8- ros2_ws dizinine gidip “ls” komutunu çalıştırdığımızda aşağıdakileri görüyorsak çalışma ortamını oluşturduk demektir:
 
