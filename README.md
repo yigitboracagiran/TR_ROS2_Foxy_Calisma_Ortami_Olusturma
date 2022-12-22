@@ -15,18 +15,20 @@
 
 6- “sudo apt install python3-colcon-common-extensions” komutu ile calcon’u kurunuz.
 
-7- “pip install pytest-rerunfailures” komutu ile gerekli bir paketi kurunuz.
-
-8- “colcon build” komutu ile çalışma ortamının oluşturunuz. Bu komutu çalıştırdıktan sonra aşağıdaki gibi bir şey yazıyor olmalıdır:
+7- “colcon build” komutu ile çalışma ortamının oluşturunuz. Bu komutu çalıştırdıktan sonra aşağıdaki gibi bir şey yazıyor olmalıdır:
 
 Starting >>> turtlesim
 Finished <<< turtlesim [5.49s]
 Summary: 1 package finished [5.58s]
 
-9- ros2_ws dizinine gidip “ls” komutunu çalıştırdığımızda aşağıdakileri görüyorsak çalışma ortamını oluşturduk demektir:
+Not: Bende paket eksikliği ile ilgili bir error çıktı. Eğer sizde hata olmazsa hata çözümünü atlayınız!!!
+
+Hata Çözümü:“pip install pytest-rerunfailures” komutu ile gerekli bir paketi kurunuz. Ardından tekrar colcon build komutunu yazınız.
+
+8- ros2_ws dizinine gidip “ls” komutunu çalıştırdığımızda aşağıdakileri görüyorsak çalışma ortamını oluşturduk demektir:
 
 build  install  log  src
 
-10- .bashrc dosyasını “nano ~/.bashrc” komutu ile açıp “source /home/zeobora/ros2_ws/install/setup.bash” satırını eklemelisiniz.
+9- .bashrc dosyasını “nano ~/.bashrc” komutu ile açıp “source /home/zeobora/ros2_ws/install/setup.bash” satırını eklemelisiniz.
 
-11- Artık terminali kapatıp açtığımızda ve “ros2 run turtlesim turtlesim_node” komutunu çalıştırığımızda çalışıyor olmalıdır.
+10- Artık terminali kapatıp açtığımızda ve “ros2 run turtlesim turtlesim_node” komutunu çalıştırığımızda çalışıyor olmalıdır.
